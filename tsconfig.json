@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "es2015",
+        "strict": true,
+        "esModuleInterop": true   
+    },
+    "include": [
+        "node_modules/p5/lib/p5.d.ts"
+    ]
+}
