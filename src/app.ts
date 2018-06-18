@@ -9,7 +9,8 @@ const world = () => {
   _p5.setup = () => {
     _p5.createCanvas(_data.windowW, _data.windowH);
     _p5.background(bgColor);
-    stuff = new Stuff();
+    const pos = _p5.createVector(200, 200);
+    stuff = new Stuff(pos);
   };
 
   _p5.draw = () => {

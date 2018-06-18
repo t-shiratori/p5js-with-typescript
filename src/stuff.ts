@@ -10,8 +10,8 @@ export default class Stuff {
   phase_x: number = _p5.random(4);
   phase_y: number = _p5.random(4);
 
-  constructor() {
-    this.pos = _p5.createVector(200, 200);
+  constructor(pos: p5.Vector) {
+    this.pos = pos;
     this.vel = _p5.createVector();
     this.acc = _p5.createVector();
   }
