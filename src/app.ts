@@ -4,7 +4,7 @@ import Stuff from "./stuff";
 
 const world = () => {
   let stuff: Stuff;
-  const bgColor: p5.Color = _p5.color(60, 60, 60, 255);
+  const bgColor: p5.Color = _p5.color(30, 30, 30, 255);
 
   _p5.setup = () => {
     _p5.createCanvas(_data.windowW, _data.windowH);

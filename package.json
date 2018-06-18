@@ -1,8 +1,9 @@
 {
   "name": "p5js-with-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "p5js with TypeScript",
   "main": "index.js",
+  "license" : "MIT",
   "scripts": {
     "build": "webpack --mode=development",
     "start": "webpack-dev-server --mode=development",

@@ -11,7 +11,9 @@ module.exports = {
         extensions:['.ts','.js']
     },
     devServer: {
-        contentBase: path.join(__dirname,'dist')
+        contentBase: path.join(__dirname,'dist'),
+        port: 9000,
+        open: true
     },
     module: {
         rules: [
