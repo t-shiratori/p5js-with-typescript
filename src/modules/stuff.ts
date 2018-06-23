@@ -6,6 +6,7 @@ export default class Stuff {
   vel: p5.Vector;
   acc: p5.Vector;
   radius: number = 20;
+  color: p5.Color = _p5.color('hsla(155, 100%, 93%, 1.0)');
   diameter: number = this.radius * 2;
   phase_x: number = _p5.random(4);
   phase_y: number = _p5.random(4);
@@ -39,14 +40,14 @@ export default class Stuff {
 
   update() {
     this.vel.add(this.acc);
-    this.vel.limit(10);
+    this.vel.limit(6);
     this.pos.add(this.vel);
     this.acc.mult(0);
   }
 
   show() {
     _p5.noStroke();
-    _p5.fill(255);
+    _p5.fill(this.color);
     _p5.ellipse(this.pos.x, this.pos.y, this.diameter, this.diameter);
   }
 
