@@ -4,7 +4,7 @@ import Stuff from "./modules/stuff";
 
 const world = () => {
   let stuff: Stuff;
-  const bgColor: p5.Color = _p5.color('hsla(155, 100%, 34%, 1.0)');
+  const bgColor: p5.Color = _p5.color('hsla(160, 100%, 26%, 1.0)');
 
   _p5.setup = () => {
     _p5.createCanvas(_data.windowW, _data.windowH);
