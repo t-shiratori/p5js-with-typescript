@@ -1,1 +1,1 @@
-export const _p5: any = new p5(() => {});
+export const _p5: p5 = new p5(() => {});
