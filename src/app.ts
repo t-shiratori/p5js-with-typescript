@@ -3,6 +3,9 @@ import { _p5 } from "./modules/p5";
 import * as _data from "./modules/data";
 import Stuff from "./modules/stuff";
 
+/* world 
+-------------------------------------------- */
+
 const world = () => {
   let stuff: Stuff;
   let backgroundColor: p5.Color = _p5.color("#008771");
@@ -16,6 +19,9 @@ const world = () => {
   }
   const guiControls: GuiControls = new GuiControls();
 
+  /* set up 
+  -------------------------------------------- */
+
   _p5.setup = () => {
     // setting canvas
     _p5.createCanvas(_data.windowW, _data.windowH);
@@ -27,12 +33,13 @@ const world = () => {
 
     // setting GUI
     const gui: any = new dat.GUI();
-    console.log("gui:", gui);
     gui.addColor(guiControls, "bgColor").onChange((color: any) => {
-      console.log("color", color);
       backgroundColor = _p5.color(`${color}`);
     });
   };
+
+  /* draw
+  -------------------------------------------- */
 
   _p5.draw = () => {
     _p5.clear();
