@@ -32,8 +32,8 @@ const world = () => {
     stuff = new Stuff(pos);
 
     // setting GUI
-    const gui: any = new dat.GUI();
-    gui.addColor(guiControls, "bgColor").onChange((color: any) => {
+    const gui: dat.GUI = new dat.GUI();
+    gui.addColor(guiControls, "bgColor").onChange((color: string) => {
       backgroundColor = _p5.color(`${color}`);
     });
   };
