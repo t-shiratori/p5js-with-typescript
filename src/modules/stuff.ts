@@ -6,7 +6,7 @@ export default class Stuff {
   vel: p5.Vector;
   acc: p5.Vector;
   radius: number = 20;
-  color: p5.Color = _p5.color('hsla(70, 100%, 85%, 1.0)');
+  color: p5.Color = _p5.color("hsla(70, 100%, 100%, 1.0)");
   diameter: number = this.radius * 2;
   phase_x: number = _p5.random(4);
   phase_y: number = _p5.random(4);

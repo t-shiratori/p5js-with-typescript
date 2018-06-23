@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "p5js with TypeScript",
   "main": "index.js",
-  "license" : "MIT",
+  "license": "MIT",
   "scripts": {
     "build": "webpack --mode=development",
     "start": "webpack-dev-server --mode=development",
     "format": "prettier --write 'src/**/*.ts'"
   },
   "devDependencies": {
+    "@types/dat.gui": "^0.7.1",
+    "dat.gui": "^0.7.2",
     "p5": "^0.6.1",
     "prettier": "1.13.5",
     "ts-loader": "^4.4.1",
