@@ -8,13 +8,13 @@ import Stuff from "./modules/stuff";
 
 const world = () => {
   let stuff: Stuff;
-  let backgroundColor: p5.Color = _p5.color("#008771");
+  let backgroundColor: p5.Color = _p5.color("#33b39f");
 
   // dat gui
   class GuiControls {
     bgColor: string;
     constructor() {
-      this.bgColor = "#008771";
+      this.bgColor = "#33b39f";
     }
   }
   const guiControls: GuiControls = new GuiControls();
